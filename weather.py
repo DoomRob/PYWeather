@@ -7,14 +7,14 @@ import ttkbootstrap as ttk
 # Root
 root = ttk.Window(themename="vapor")
 root.title("What is the Weather Today?")
-root.iconbitmap('c:/Users/corru/OneDrive/Documents/Python/GUI/weather')
+root.iconbitmap('Documents/Python/GUI/weather')
 root.geometry("800x400")
 
 # https://home.openweathermap.org/
 
 # Collects Weather Data from the API Key
 def getWeather(city):
-    weatherAPI_Key = "0e115998326124940824a580331df80d"
+    weatherAPI_Key = "
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={weatherAPI_Key}"
     res = requests.get(url)
 
